@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../DarkWeb/image/title.png" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+<body>
+    <!-- Background video container -->
+    <div class="background-video">
+        <video autoplay loop muted playsinline>
+            <source src="./video/background 2.mp4" type="video/mp4" alt="Background Video">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Login container -->
+    <div class="login-container">
+        <header>
+            <img src="./image/logo 2.png" alt="Login Icon" class="login-icon">
+            <h2>Profile</h2>
+        </header>
+
+        <!-- Login form -->
+        <form id="login-form">
+            <!-- Username input group -->
+            <div class="input-group">
+                <label for="username" class="placeholder" id="username-label">Username *</label>
+                <input type="text" id="username" autocomplete="off" name="username" required>
+            </div>
+
+            <!-- Password input group -->
+            <div class="input-group">
+                <label for="password" class="placeholder" id="password-label">Password *</label>
+                <input type="password" id="password" autocomplete="off" name="password" required>
+            </div>
+
+            <!-- Login button -->
+            <button type="submit" id="rippleButton">
+                <span class="text-container">Login</span>
+            </button>
+
+            <!-- Create new account button -->
+            <button type="button" onclick="window.location.href='/path-to-new-account-page'" id="createRippleButton">
+                <span class="text-container">Create a new account</span>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
